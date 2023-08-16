@@ -19,9 +19,9 @@ const FilterBar = () => {
     
   return (
     <div className='flex flex-row gap-x-5 flex-wrap p-5'>
-        {categories.map((cat)=>{
+        {categories.map((cat,ind)=>{
         return (
-            <p className='bg-slate-300 px-3 py-1 rounded-full mx-auto my-1' onClick={()=>handleCat(cat)}>{cat}</p>
+            <p className='bg-slate-300 px-3 py-1 rounded-full mx-auto my-1' onClick={()=>handleCat(cat)} key={ind}>{cat}</p>
             );
             
         })}

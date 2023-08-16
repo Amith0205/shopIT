@@ -5,12 +5,12 @@ import { addItem,deleteItem } from '../../utils/Slices/CartSlice';
 const Card = ({product}) => {
     const dispatch=useDispatch();
     const handleDelete=(product)=>{        
-        dispatch(deleteItem(product.id));  
+        dispatch(deleteItem(product));  
     }
-    
+    console.log(product);
     return (
         <div className='m-5 p-2 max-w-xs flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md h-100'>
-            <img src={product.image}
+            <img src={product.images[0]}
                 className='object-fill m-3 rounded-lg h-52'/>
 
             <div className=' items-center justify-between mx-auto'>

@@ -13,10 +13,16 @@ const cartSlice=createSlice({
             state.cnt+=1;
         },
         deleteItem:(state,action)=>{
-            // console.log(action.payload)
+            // console.log(action.payload.id)
+            state.items=state.items.filter(item=>item.id!==action.payload.id)
+            console.log(state.items)
             
-            items:state.items.filter(item=>item.id!==action.payload)
-            // state.cnt-=1;
+            if(state.items.length!=0){
+                state.cnt-=1;
+            }else{
+                state.cnt=0;
+            }
+            
             // delete state.items[action.payload];
             // console.log(state.items)
         },

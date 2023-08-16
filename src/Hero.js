@@ -8,9 +8,9 @@ const Hero = () => {
     <>
         <div className='flex flex-row bg-img h-screen'>
         <div className='w-[52%] shadow-lg flex flex-col justify-center'>
-        <p className=' mx-auto  w-[80%] text-6xl font-bold m-3 text-left'>Order items with the click of a button</p>
+        <p className=' mx-auto  w-[80%] text-6xl font-bold m-3 text-left  tracking-wide'>Order items with the click of a button!</p>
           {/* <img src={bg} className='mx-auto w-2/5'/> */}
-          <button>Explore</button>
+          {/* <button>Explore</button> */}
         
         </div>
        
