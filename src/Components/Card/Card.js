@@ -5,8 +5,6 @@ import {addItem} from '../../utils/Slices/CartSlice';
 import Quantity from './Quantity';
 
 const Card = ({product}) => {
-    
-
     const dispatch = useDispatch();
     
     const handleAdd = (product) => {
@@ -52,4 +50,4 @@ const Card = ({product}) => {
     )
 }
 
-export default Card
+export default Card;
